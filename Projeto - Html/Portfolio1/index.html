@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="banner" id="sec">
         <header>
             <a href="#" class="logo">Logo</a>
-            <div id="toggle"></div>
+            <div id="toggle" onclick="toggle()"></div>
         </header>
         <div class="content">
             <h2>Hello World, <br>I'm <span>Muhammad Irshad</span></h2>
@@ -28,5 +28,23 @@
             <li><a href="#"><img src="img/Icones/twitter.png" alt=""></a></li>
         </ul>  
     </section>
+        <div id="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var navigation = document.getElementById('navigation');
+                
+                sec.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
 </body>
 </html>
